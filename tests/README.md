@@ -71,3 +71,30 @@ pytest tests/integration_tests/vectorstores/test_elasticsearch.py --cov=langchai
 start "" htmlcov/index.html || open htmlcov/index.html
 
 ```
+
+<!--- START SELFDOC --->
+## SelfDoc
+_Auto-generated code documentation to make the repository easier to navigate and contribute to._
+
+_Last Updated: 2023-06-18_
+
+The `tests` directory is for testing the `langchain` codebase. It includes instructions for running integration and unit tests, common test data, and entry points for all tests. The `integration_tests` directory is for testing the integration of the codebase with external APIs and services, while the `unit_tests` directory is for testing various modules and classes in the codebase. Additionally, the `mock_servers` directory is for implementing mock servers for testing purposes.
+
+### Files
+#### __init__.py
+This file is the entry point for all tests in the package.
+
+#### data.py
+This file defines common test data for the project's integration tests, including paths to test PDF files.
+
+### Directories
+#### integration_tests
+The `integration_tests` directory is for testing the integration of the `langchain` codebase with external APIs and services, including utilities and vector stores. The tests cover various functionality and APIs, ensuring that the wrappers and utilities return the expected results for various queries and handle edge cases correctly. The directory includes fixtures for generating test data and distance metrics, as well as cassettes for custom indexing and querying documents in Elasticsearch, Pinecone vector store, and Weaviate's vector store.
+
+#### mock_servers
+The `mock_servers` directory is for implementing mock servers for testing purposes. Specifically, the `robot` directory contains a mock server implementation of a robot using FastAPI. It includes HTTP endpoints for controlling the robot, models and enums for the robot's state, direction, style, and cautiousness, and a function for adding server configuration to the OpenAPI schema.
+
+#### unit_tests
+The `unit_tests` directory is for testing various modules and classes in the `langchain` codebase. It includes subdirectories for testing different functionalities such as evaluation, examples, LLMS, memory, output parsers, prompts, retrievers, tools, utilities, and vector stores. The tests ensure that the codebase functions correctly and that the different functionalities return the expected output.
+
+<!--- END SELFDOC --->
